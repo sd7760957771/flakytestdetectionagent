@@ -1,0 +1,43 @@
+Flaky Test Detection - Sample Test Results
+Test Script
+Run 1
+Run 2
+Run 3
+Run 4
+Run 5
+Notes
+test_login_functionality.py
+PASS
+PASS
+PASS
+PASS
+PASS
+Stable
+test_payment_checkout.py
+PASS
+FAIL
+PASS
+FAIL
+PASS
+Flaky
+test_search_feature.py
+PASS
+PASS
+PASS
+PASS
+PASS
+Stable
+test_profile_update.py
+FAIL
+PASS
+PASS
+PASS
+PASS
+Flaky (re-run success)
+test_notifications.py
+PASS
+PASS
+PASS
+FAIL
+PASS
+Flaky (intermittent)
