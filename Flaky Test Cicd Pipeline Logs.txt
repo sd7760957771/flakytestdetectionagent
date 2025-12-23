@@ -1,0 +1,41 @@
+Flaky Test Detection - Sample CI/CD Pipeline Logs
+Pipeline Run #101
+[2025-12-23 09:00:00] INFO  Starting CI/CD pipeline run #101
+[2025-12-23 09:00:30] INFO  Code checkout completed (commit: abc123)
+[2025-12-23 09:01:10] INFO  Environment setup completed
+[2025-12-23 09:01:12] INFO  Executing test_login_functionality.py
+[2025-12-23 09:01:18] INFO  Result: PASS
+[2025-12-23 09:02:45] INFO  Executing test_payment_checkout.py
+[2025-12-23 09:02:58] ERROR Result: FAIL (Timeout while processing payment)
+[2025-12-23 09:03:10] INFO  Retrying test_payment_checkout.py
+[2025-12-23 09:03:25] INFO  Retry Result: PASS
+[2025-12-23 09:04:10] INFO  Executing test_search_feature.py
+[2025-12-23 09:04:18] INFO  Result: PASS
+[2025-12-23 09:05:00] INFO  Executing test_profile_update.py
+[2025-12-23 09:05:08] ERROR Result: FAIL (Element not found)
+[2025-12-23 09:05:20] INFO  Retrying test_profile_update.py
+[2025-12-23 09:05:35] INFO  Retry Result: PASS
+[2025-12-23 09:06:15] INFO  Executing test_notifications.py
+[2025-12-23 09:06:22] INFO  Result: PASS
+Environment Metadata
+[2025-12-23 09:07:00] INFO  Pipeline completed with warnings
+[2025-12-23 09:07:00] INFO  Detected potential flaky tests: 
+test_payment_checkout.py, test_profile_update.py
+Test Script
+test_login_functionality.py
+test_payment_checkout.py
+test_search_feature.py
+test_profile_update.py
+test_notifications.py
+Browser
+OS
+CI Node
+Chrome Windows Node-1
+Chrome Windows Node-2
+Firefox
+Linux
+Node-3
+Chrome Windows Node-2
+Safari
+MacOS
+Node-4
