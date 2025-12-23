@@ -1,0 +1,25 @@
+Flaky Test Detection - Sample Test Scripts
+Test Script 1: test_login_functionality.py
+def test_login():
+# Simulate login test
+assert login("user", "pass") == True
+Test Script 2: test_payment_checkout.py
+def test_checkout():
+# Simulate checkout process
+result = process_payment(amount=100)
+assert result == "SUCCESS"
+Test Script 3: test_search_feature.py
+def test_search():
+# Simulate search feature
+results = search("laptop")
+assert len(results) > 0
+Test Script 4: test_profile_update.py
+def test_profile_update():
+# Simulate profile update
+result = update_profile(email="user@example.com")
+assert result == "UPDATED"
+Test Script 5: test_notifications.py
+def test_notifications():
+# Simulate notifications delivery
+notifications = get_notifications(user_id=123)
+assert notifications is not None
